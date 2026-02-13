@@ -7,11 +7,13 @@ import Member from "./page/Member";
 import ServiceMap from "./page/ServiceMap";
 import PrivateRoute from "./components/PrivateRoute";
 import LiffCallback from "./components/LiffCallback";
+import LiffEntry from "./components/LiffEntry";
 
 export default function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<LiffEntry />} />
         <Route path="/register" element={<Register />} />
         <Route path="/map-service" element={<ServiceMap />} />
 
