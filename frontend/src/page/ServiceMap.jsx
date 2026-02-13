@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react'
 import { Sheet } from 'react-modal-sheet';
 
 import CenterItem from '../components/CenterItem';
-import ViewMap from '../components/viewMap';
+import ViewMap from '../components/ViewMap';
 import { getDistance } from '../utils/Distance';
 
 import { IoClose } from "react-icons/io5";
