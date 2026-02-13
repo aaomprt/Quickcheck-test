@@ -10,98 +10,98 @@ VALUES
 (
     '5211906988',   
     'front_bumper',
-    'camry',
+    'Camry',
     '2017',
     2800.00 
 ),
 (
     '5215906977',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2017',
     2850.00
 ),
 (
     '5311106590',
     'grille',
-    'camry',
+    'Camry',
     '2017',
     3050.00 
 ),
 (
     '8791006700',
     'mirror',
-    'camry',
+    'Camry',
     '2017',
     8300.00 
 ),
 (
     '8118506A60',
     'headlight',
-    'camry',
+    'Camry',
     '2017',
     8400.00 
 ),
 (
     '8156106710',
     'taillight',
-    'camry',
+    'Camry',
     '2017',
     2800.00
 ),
 (
     '6700106190',
     'door',
-    'camry',
+    'Camry',
     '2017',
     15000.00
 ),
 (
     '521190X916',
     'front_bumper',
-    'camry',
+    'Camry',
     '2018',
     3850.00
 ),
 (
     '521190X914',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2018',
     3800.00
 ),
 (
     '5311206B00',
     'grille',
-    'camry',
+    'Camry',
     '2018',
     3500.00
 ),
 (
     '8791006A61',
     'mirror',
-    'camry',
+    'Camry',
     '2018',
     9300.00 
 ),
 (
     '8111006C70',
     'headlight',
-    'camry',
+    'Camry',
     '2018',
     8400.00 
 ),
 (
     '8155006850',
     'taillight',
-    'camry',
+    'Camry',
     '2018',
     2900.00
 ),
 (
     '6700106300',
     'door',
-    'camry',
+    'Camry',
     '2018',
     14500.00
 )
@@ -109,784 +109,784 @@ VALUES
 (
     '5211906G50',
     'front_bumper',
-    'camry',
+    'Camry',
     '2019',
     3800.00
 ),
 (
     '5215906G00',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2019',
     3500.00
 ),
 (
     '5311106G50',
     'grille',
-    'camry',
+    'Camry',
     '2019',
     4500.00
 ),
 (
     '8794006A60',
     'mirror',
-    'camry',
+    'Camry',
     '2019',
     8500.00 
 ),
 (
     '8117006C40',
     'headlight',
-    'camry',
+    'Camry',
     '2019',
     9000.00 
 ),
 (
     '8156106750',
     'taillight',
-    'camry',
+    'Camry',
     '2019',
     3050.00
 ),
 (
     '6700206240',
     'door',
-    'camry',
+    'Camry',
     '2019',
     15500.00
 ),
 (
     '5211906G51',
     'front_bumper',
-    'camry',
+    'Camry',
     '2020',
     4000.00
 ),
 (
     '5215906G0',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2020',
     3700.00
 ),
 (
     '5310106E50',
     'grille',
-    'camry',
+    'Camry',
     '2020',
     4800.00
 ),
 (
     '8791006A60',
     'mirror',
-    'camry',
+    'Camry',
     '2020',
     8700.00 
 ),
 (
     '8111006C40',
     'headlight',
-    'camry',
+    'Camry',
     '2020',
     9200.00 
 ),
 (
     '8155006750',
     'taillight',
-    'camry',
+    'Camry',
     '2020',
     3200.00
 ),
 (
     '6700106240',
     'door',
-    'camry',
+    'Camry',
     '2020',
     15500.00
 ),
 (
     '5211906L40',
     'front_bumper',
-    'camry',
+    'Camry',
     '2021',
     4200.00
 ),
 (
     '5215906G02',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2021',
     3900.00
 ),
 (
     '5310106G90',
     'grille',
-    'camry',
+    'Camry',
     '2021',
     5500.00
 ),
 (
     '8791006B40',
     'mirror',
-    'camry',
+    'Camry',
     '2021',
     9000.00 
 ),
 (
     '8111006D90',
     'headlight',
-    'camry',
+    'Camry',
     '2021',
     9500.00 
 ),
 (
     '8155006831',
     'taillight',
-    'camry',
+    'Camry',
     '2021',
     3300.00
 ),
 (
     '6700106241',
     'door',
-    'camry',
+    'Camry',
     '2021',
     15000.00
 ),
 (
     '5211906L43',
     'front_bumper',
-    'camry',
+    'Camry',
     '2022',
     4800.00
 ),
 (
     '5215906G03',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2022',
     4100.00
 ),
 (
     '5310106G91',
     'grille',
-    'camry',
+    'Camry',
     '2022',
     6000.00
 ),
 (
     '8791006B41',
     'mirror',
-    'camry',
+    'Camry',
     '2022',
     8500.00 
 ),
 (
     '8111006D91',
     'headlight',
-    'camry',
+    'Camry',
     '2022',
     9850.00 
 ),
 (
     '8155006832',
     'taillight',
-    'camry',
+    'Camry',
     '2022',
     3400.00
 ),
 (
     '6700106242',
     'door',
-    'camry',
+    'Camry',
     '2022',
     14500.00
 ),
 (
     '5211906L42',
     'front_bumper',
-    'camry',
+    'Camry',
     '2023',
     4800.00
 ),
 (
     '5215906G04',
     'rear_bumper',
-    'camry',
+    'Camry',
     '2023',
     4500.00
 ),
 (
     '5310106G92',
     'grille',
-    'camry',
+    'Camry',
     '2023',
     8500.00
 ),
 (
     '8791006B42',
     'mirror',
-    'camry',
+    'Camry',
     '2023',
     8500.00 
 ),
 (
     '8111006D92',
     'headlight',
-    'camry',
+    'Camry',
     '2023',
     15200.00 
 ),
 (
     '8155006830',
     'taillight',
-    'camry',
+    'Camry',
     '2023',
     3500.00
 ),
 (
     '6700106243',
     'door',
-    'camry',
+    'Camry',
     '2023',
     13500.00
 ),
 (
     '521190A913',
     'front_bumper',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     3800.00
 ),
 (
     '521590A905',
     'rear_bumper',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     3500.00
 ),
 (
     '531010A030',
     'grille',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     6000.00
 ),
 (
     '879100A160',
     'mirror',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     8800.00 
 ),
 (
     '811100A010',
     'headlight',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     19500.00 
 ),
 (
     '815500A010',
     'taillight',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     5600.00
 ),
 (
     '670010A020',
     'door',
-    'Corolla_cross',
+    'Corolla cross',
     '2022',
     11500.00
 ),
 (
     '521190A903',
     'front_bumper',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     4500.00
 ),
 (
     '521590A906',
     'rear_bumper',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     3700.00
 ),
 (
     '531010A031',
     'grille',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     6500.00
 ),
 (
     '879100A161',
     'mirror',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     9000.00 
 ),
 (
     '811100A011',
     'headlight',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     22000.00 
 ),
 (
     '815500A011',
     'taillight',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     5800.00
 ),
 (
     '670010A021',
     'door',
-    'Corolla_cross',
+    'Corolla cross',
     '2023',
     11000.00
 ),
 (
     '521190U927',
     'front_bumper',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     2500.00
 ),
 (
     '521590U917',
     'rear_bumper',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     2100.00
 ),
 (
     '531140D020',
     'grille',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     2200.00
 ),
 (
     '879100D640',
     'mirror',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     3500.00 
 ),
 (
     '811100DG60',
     'headlight',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     5800.00 
 ),
 (
     '815500D500',
     'taillight',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     2800.00
 ),
 (
     '670010D130',
     'door',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2017',
     8500.00
 ),
 (
     '521190U950',
     'front_bumper',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     3200.00
 ),
 (
     '521590D961',
     'rear_bumper',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     3200.00
 ),
 (
     '531120D160',
     'grille',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     2400.00
 ),
 (
     '879100D810',
     'mirror',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     4700.00 
 ),
 (
     '811100DA00',
     'headlight',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     7900.00 
 ),
 (
     '815500D501',
     'taillight',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     3500.00
 ),
 (
     '670010D131',
     'door',
-    'Yaris_hatchback',
+    'Yaris hatchback',
     '2020',
     8700.00
 ),
 (
     '521190U931',
     'front_bumper',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     2700.00
 ),
 (
     '521590U906',
     'rear_bumper',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     2900.00
 ),
 (
     '531010D540',
     'grille',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     2200.00
 ),
 (
     '879100D811',
     'mirror',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     3700.00 
 ),
 (
     '811100D680',
     'headlight',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     6000.00 
 ),
 (
     '815500D560',
     'taillight',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     3500.00
 ),
 (
     '670010D331',
     'door',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2018',
     7900.00
 ),
 (
     '521190U932',
     'front_bumper',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     3000.00
 ),
 (
     '521590U907',
     'rear_bumper',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     3200.00
 ),
 (
     '531010D541',
     'grille',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     2500.00
 ),
 (
     '879100D812',
     'mirror',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     4000.00 
 ),
 (
     '811100D681',
     'headlight',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     6200.00 
 ),
 (
     '815500D561',
     'taillight',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     3700.00
 ),
 (
     '670010D332',
     'door',
-    'Yaris_ATIV',
+    'Yaris ativ',
     '2019',
     8200.00
 ),
 (
     '521190U933',
     'front_bumper',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     3200.00
 ),
 (
     '521590U908',
     'rear_bumper',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     2800.00
 ),
 (
     '531010D542',
     'grille',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     2500.00
 ),
 (
     '879100D813',
     'mirror',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     4200.00 
 ),
 (
     '811100D682',
     'headlight',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     5200.00 
 ),
 (
     '815500D562',
     'taillight',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     3800.00
 ),
 (
     '670010D330',
     'door',
-    'Yaris_sedan',
+    'Yaris sedan',
     '2019',
     7900.00
 ),
 (
     '5211912G30',
     'front_bumper',
-    'altis',
+    'Altis',
     '2019',
     3500.00
 ),
 (
     '5215912B60',
     'rear_bumper',
-    'altis',
+    'Altis',
     '2019',
     4200.00
 ),
 (
     '5310112F20',
     'grille',
-    'altis',
+    'Altis',
     '2019',
     4800.00
 ),
 (
     '8791012L40',
     'mirror',
-    'altis',
+    'Altis',
     '2019',
     7500.00 
 ),
 (
     '8111012M00',
     'headlight',
-    'altis',
+    'Altis',
     '2019',
     1150.00 
 ),
 (
     '8155012D70',
     'taillight',
-    'altis',
+    'Altis',
     '2019',
     5200.00
 ),
 (
     '6700112C20',
     'door',
-    'altis',
+    'Altis',
     '2019',
     10500.00
 ),
 (
     '5211912G31',
     'front_bumper',
-    'altis',
+    'Altis',
     '2020',
     3900.00
 ),
 (
     '5215912B61',
     'rear_bumper',
-    'altis',
+    'Altis',
     '2020',
     4800.00
 ),
 (
     '5310112F21',
     'grille',
-    'altis',
+    'Altis',
     '2020',
     5200.00
 ),
 (
     '8791012L41',
     'mirror',
-    'altis',
+    'Altis',
     '2020',
     7800.00 
 ),
 (
     '8111012M01',
     'headlight',
-    'altis',
+    'Altis',
     '2020',
     12500.00 
 ),
 (
     '8155012D71',
     'taillight',
-    'altis',
+    'Altis',
     '2020',
     5500.00
 ),
 (
     '6700112C21',
     'door',
-    'altis',
+    'Altis',
     '2020',
     11000.00
 ),
 (
     '5211912G32',
     'front_bumper',
-    'altis',
+    'Altis',
     '2021',
     4200.00
 ),
 (
     '5215912B62',
     'rear_bumper',
-    'altis',
+    'Altis',
     '2021',
     4500.00
 ),
 (
     '5310112F22',
     'grille',
-    'altis',
+    'Altis',
     '2021',
     5800.00
 ),
 (
     '8791012L42',
     'mirror',
-    'altis',
+    'Altis',
     '2021',
     8200.00 
 ),
 (
     '8111012M02',
     'headlight',
-    'altis',
+    'Altis',
     '2021',
     13500.00 
 ),
 (
     '8155012D72',
     'taillight',
-    'altis',
+    'Altis',
     '2021',
     5200.00
 ),
 (
     '6700112C22',
     'door',
-    'altis',
+    'Altis',
     '2021',
     11500.00
 ),
 (
     '5211912G33',
     'front_bumper',
-    'altis',
+    'Altis',
     '2022',
     4500.00
 ),
 (
     '5215912B63',
     'rear_bumper',
-    'altis',
+    'Altis',
     '2022',
     4800.00
 ),
 (
     '5310112F23',
     'grille',
-    'altis',
+    'Altis',
     '2022',
     6000.00
 ),
 (
     '8791012L43',
     'mirror',
-    'altis',
+    'Altis',
     '2022',
     8500.00 
 ),
 (
     '8111012M03',
     'headlight',
-    'altis',
+    'Altis',
     '2022',
     14500.00 
 ),
 (
     '8155012D73',
     'taillight',
-    'altis',
+    'Altis',
     '2022',
     5500.00
 ),
 (
     '6700112C23',
     'door',
-    'altis',
+    'Altis',
     '2022',
     12500.00
 )
