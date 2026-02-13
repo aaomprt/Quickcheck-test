@@ -1,903 +1,892 @@
-[
-// Camry 2017 parts
-{
-    part_number: '5211906988',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2017',
-    price: 2800.00 
-},
-{
-    part_number: '5215906977',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2017',
-    price: 2850.00
-},
-{
-    part_number: '5311106590',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2017',
-    price: 3050.00 
-},
-{
-    part_number: '8791006700',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2017',
-    price: 8300.00 
-},
-{
-    part_number: '8118506A60',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2017',
-    price: 8400.00 
-},
-{
-    part_number: '8156106710',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2017',
-    price: 2800.00
-},
-{
-    part_number: '6700106190',
-    part_type: 'door',
-    model: 'camry',
-    year: '2017',
-    price: 15000.00
-},
-// Camry 2018 parts
-{
-    part_number: '521190X916',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2018',
-    price: 3850.00
-},
-{
-    part_number: '521190X914',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2018',
-    price: 3800.00
-},
-{
-    part_number: '5311206B00',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2018',
-    price: 3500.00
-},
-{
-    part_number: '8791006A60',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2018',
-    price: 9300.00 
-},
-{
-    part_number: '8111006C70',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2018',
-    price: 8400.00 
-},
-{
-    part_number: '8155006850',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2018',
-    price: 2900.00
-},
-{
-    part_number: '6700106300',
-    part_type: 'door',
-    model: 'camry',
-    year: '2018',
-    price: 14500.00
-}
-// Camry 2019 parts
+INSERT INTO
+    part_master (
+        part_number,
+        part_type,
+        model,
+        year,
+        price
+    )
+VALUES 
+(
+    '5211906988',   
+    'front_bumper',
+    'camry',
+    '2017',
+    2800.00 
+),
+(
+    '5215906977',
+    'rear_bumper',
+    'camry',
+    '2017',
+    2850.00
+),
+(
+    '5311106590',
+    'grille',
+    'camry',
+    '2017',
+    3050.00 
+),
+(
+    '8791006700',
+    'mirror',
+    'camry',
+    '2017',
+    8300.00 
+),
+(
+    '8118506A60',
+    'headlight',
+    'camry',
+    '2017',
+    8400.00 
+),
+(
+    '8156106710',
+    'taillight',
+    'camry',
+    '2017',
+    2800.00
+),
+(
+    '6700106190',
+    'door',
+    'camry',
+    '2017',
+    15000.00
+),
+(
+    '521190X916',
+    'front_bumper',
+    'camry',
+    '2018',
+    3850.00
+),
+(
+    '521190X914',
+    'rear_bumper',
+    'camry',
+    '2018',
+    3800.00
+),
+(
+    '5311206B00',
+    'grille',
+    'camry',
+    '2018',
+    3500.00
+),
+(
+    '8791006A61',
+    'mirror',
+    'camry',
+    '2018',
+    9300.00 
+),
+(
+    '8111006C70',
+    'headlight',
+    'camry',
+    '2018',
+    8400.00 
+),
+(
+    '8155006850',
+    'taillight',
+    'camry',
+    '2018',
+    2900.00
+),
+(
+    '6700106300',
+    'door',
+    'camry',
+    '2018',
+    14500.00
+)
 ,
-{
-    part_number: '5211906G50',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2019',
-    price: 3800.00
-},
-{
-    part_number: '5215906G00',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2019',
-    price: 3500.00
-},
-{
-    part_number: '5311106G50',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2019',
-    price: 4500.00
-},
-{
-    part_number: '8794006A60',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2019',
-    price: 8500.00 
-},
-{
-    part_number: '8117006C40',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2019',
-    price: 9000.00 
-},
-{
-    part_number: '8156106750',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2019',
-    price: 3050.00
-},
-{
-    part_number: '6700206240',
-    part_type: 'door',
-    model: 'camry',
-    year: '2019',
-    price: 15500.00
-},
-// Camry 2020 parts
-{
-    part_number: '5211906G50',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2020',
-    price: 4000.00
-},
-{
-    part_number: '5215906G00',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2020',
-    price: 3700.00
-},
-{
-    part_number: '5310106E50',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2020',
-    price: 4800.00
-},
-{
-    part_number: '8791006A60',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2020',
-    price: 8700.00 
-},
-{
-    part_number: '8111006C40',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2020',
-    price: 9200.00 
-},
-{
-    part_number: '8155006750',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2020',
-    price: 3200.00
-},
-{
-    part_number: '6700106240',
-    part_type: 'door',
-    model: 'camry',
-    year: '2020',
-    price: 15500.00
-},
-// Camry 2021 parts
-{
-    part_number: '5211906L40',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2021',
-    price: 4200.00
-},
-{
-    part_number: '5215906G00',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2021',
-    price: 3900.00
-},
-{
-    part_number: '5310106G90',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2021',
-    price: 5500.00
-},
-{
-    part_number: '8791006B40',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2021',
-    price: 9000.00 
-},
-{
-    part_number: '8111006D90',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2021',
-    price: 9500.00 
-},
-{
-    part_number: '8155006830',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2021',
-    price: 3300.00
-},
-{
-    part_number: '6700106240',
-    part_type: 'door',
-    model: 'camry',
-    year: '2021',
-    price: 15000.00
-},
-// 2022 parts
-{
-    part_number: '5211906L40',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2022',
-    price: 4800.00
-},
-{
-    part_number: '5215906G00',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2022',
-    price: 4100.00
-},
-{
-    part_number: '5310106G90',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2022',
-    price: 6000.00
-},
-{
-    part_number: '8791006B40',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2022',
-    price: 8500.00 
-},
-{
-    part_number: '8111006D90',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2022',
-    price: 9850.00 
-},
-{
-    part_number: '8155006830',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2022',
-    price: 3400.00
-},
-{
-    part_number: '6700106240',
-    part_type: 'door',
-    model: 'camry',
-    year: '2022',
-    price: 14500.00
-},
-// Camry 2023 parts
-{
-    part_number: '5211906L40',
-    part_type: 'front_bumper',
-    model: 'camry',
-    year: '2023',
-    price: 4800.00
-},
-{
-    part_number: '5215906G00',
-    part_type: 'rear_bumper',
-    model: 'camry',
-    year: '2023',
-    price: 4500.00
-},
-{
-    part_number: '5310106G90',
-    part_type: 'grille',
-    model: 'camry',
-    year: '2023',
-    price: 8500.00
-},
-{
-    part_number: '8791006B40',
-    part_type: 'mirror',
-    model: 'camry',
-    year: '2023',
-    price: 8500.00 
-},
-{
-    part_number: '8111006D90',
-    part_type: 'headlight',
-    model: 'camry',
-    year: '2023',
-    price: 15200.00 
-},
-{
-    part_number: '8155006830',
-    part_type: 'taillight',
-    model: 'camry',
-    year: '2023',
-    price: 3500.00
-},
-{
-    part_number: '6700106240',
-    part_type: 'door',
-    model: 'camry',
-    year: '2023',
-    price: 13500.00
-},
-//Corolla cross 2022 parts
-{
-    part_number: '521190A913',
-    part_type: 'front_bumper',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 3800.00
-},
-{
-    part_number: '521590A905',
-    part_type: 'rear_bumper',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 3500.00
-},
-{
-    part_number: '531010A030',
-    part_type: 'grille',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 6000.00
-},
-{
-    part_number: '879100A160',
-    part_type: 'mirror',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 8800.00 
-},
-{
-    part_number: '811100A010',
-    part_type: 'headlight',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 19500.00 
-},
-{
-    part_number: '815500A010',
-    part_type: 'taillight',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 5600.00
-},
-{
-    part_number: '670010A020',
-    part_type: 'door',
-    model: 'Corolla_cross',
-    year: '2022',
-    price: 11500.00
-},
-// Corolla cross 2023 parts
-{
-    part_number: '521190A903',
-    part_type: 'front_bumper',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 4500.00
-},
-{
-    part_number: '521590A905',
-    part_type: 'rear_bumper',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 3700.00
-},
-{
-    part_number: '531010A030',
-    part_type: 'grille',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 6500.00
-},
-{
-    part_number: '879100A160',
-    part_type: 'mirror',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 9000.00 
-},
-{
-    part_number: '811100A010',
-    part_type: 'headlight',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 22000.00 
-},
-{
-    part_number: '815500A010',
-    part_type: 'taillight',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 5800.00
-},
-{
-    part_number: '670010A020',
-    part_type: 'door',
-    model: 'Corolla_cross',
-    year: '2023',
-    price: 11000.00
-},
-//Yaris hatchback 2017 part
-{
-    part_number: '521190U927',
-    part_type: 'front_bumper',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 2500.00
-},
-{
-    part_number: '521590U917',
-    part_type: 'rear_bumper',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 2100.00
-},
-{
-    part_number: '531140D020',
-    part_type: 'grille',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 2200.00
-},
-{
-    part_number: '879100D640',
-    part_type: 'mirror',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 3500.00 
-},
-{
-    part_number: '811100DG60',
-    part_type: 'headlight',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 5800.00 
-},
-{
-    part_number: '815500D500',
-    part_type: 'taillight',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 2800.00
-},
-{
-    part_number: '670010D130',
-    part_type: 'door',
-    model: 'Yaris_hatchback',
-    year: '2017',
-    price: 8500.00
-},
-//Yaris hatchback 2020 part
-{
-    part_number: '521190U950',
-    part_type: 'front_bumper',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 3200.00
-},
-{
-    part_number: '521590D961',
-    part_type: 'rear_bumper',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 3200.00
-},
-{
-    part_number: '531120D160',
-    part_type: 'grille',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 2400.00
-},
-{
-    part_number: '879100D810',
-    part_type: 'mirror',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 4700.00 
-},
-{
-    part_number: '811100DA00',
-    part_type: 'headlight',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 7900.00 
-},
-{
-    part_number: '815500D500',
-    part_type: 'taillight',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 3500.00
-},
-{
-    part_number: '670010D130',
-    part_type: 'door',
-    model: 'Yaris_hatchback',
-    year: '2020',
-    price: 8700.00
-},
-//Yaris  ATIV 2018 part
-{
-    part_number: '521190U931',
-    part_type: 'front_bumper',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 2700.00
-},
-{
-    part_number: '521590U906',
-    part_type: 'rear_bumper',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 2900.00
-},
-{
-    part_number: '531010D540',
-    part_type: 'grille',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 2200.00
-},
-{
-    part_number: '879100D810',
-    part_type: 'mirror',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 3700.00 
-},
-{
-    part_number: '811100D680',
-    part_type: 'headlight',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 6000.00 
-},
-{
-    part_number: '815500D560',
-    part_type: 'taillight',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 3500.00
-},
-{
-    part_number: '670010D330',
-    part_type: 'door',
-    model: 'Yaris_ATIV',
-    year: '2018',
-    price: 7900.00
-},
-//Yaris  ATIV 2019 part
-{
-    part_number: '521190U931',
-    part_type: 'front_bumper',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 3000.00
-},
-{
-    part_number: '521590U906',
-    part_type: 'rear_bumper',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 3200.00
-},
-{
-    part_number: '531010D540',
-    part_type: 'grille',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 2500.00
-},
-{
-    part_number: '879100D810',
-    part_type: 'mirror',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 4000.00 
-},
-{
-    part_number: '811100D680',
-    part_type: 'headlight',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 6200.00 
-},
-{
-    part_number: '815500D560',
-    part_type: 'taillight',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 3700.00
-},
-{
-    part_number: '670010D330',
-    part_type: 'door',
-    model: 'Yaris_ATIV',
-    year: '2019',
-    price: 8200.00
-},
-//Yaris  Sedan 2019 part
-{
-    part_number: '521190U931',
-    part_type: 'front_bumper',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 3200.00
-},
-{
-    part_number: '521590U906',
-    part_type: 'rear_bumper',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 2800.00
-},
-{
-    part_number: '531010D540',
-    part_type: 'grille',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 2500.00
-},
-{
-    part_number: '879100D810',
-    part_type: 'mirror',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 4200.00 
-},
-{
-    part_number: '811100D680',
-    part_type: 'headlight',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 5200.00 
-},
-{
-    part_number: '815500D560',
-    part_type: 'taillight',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 3800.00
-},
-{
-    part_number: '670010D330',
-    part_type: 'door',
-    model: 'Yaris_sedan',
-    year: '2019',
-    price: 7900.00
-},
-//Altis 2019 parts
-{
-    part_number: '5211912G30',
-    part_type: 'front_bumper',
-    model: 'altis',
-    year: '2019',
-    price: 3500.00
-},
-{
-    part_number: '5215912B60',
-    part_type: 'rear_bumper',
-    model: 'altis',
-    year: '2019',
-    price: 4200.00
-},
-{
-    part_number: '5310112F20',
-    part_type: 'grille',
-    model: 'altis',
-    year: '2019',
-    price: 4800.00
-},
-{
-    part_number: '8791012L40',
-    part_type: 'mirror',
-    model: 'altis',
-    year: '2019',
-    price: 7500.00 
-},
-{
-    part_number: '8111012M00',
-    part_type: 'headlight',
-    model: 'altis',
-    year: '2019',
-    price: 1150.00 
-},
-{
-    part_number: '8155012D70',
-    part_type: 'taillight',
-    model: 'altis',
-    year: '2019',
-    price: 5200.00
-},
-{
-    part_number: '6700112C20',
-    part_type: 'door',
-    model: 'altis',
-    year: '2019',
-    price: 10500.00
-},
-//Altis 2020 parts
-{
-    part_number: '5211912G30',
-    part_type: 'front_bumper',
-    model: 'altis',
-    year: '2020',
-    price: 3900.00
-},
-{
-    part_number: '5215912B60',
-    part_type: 'rear_bumper',
-    model: 'altis',
-    year: '2020',
-    price: 4800.00
-},
-{
-    part_number: '5310112F20',
-    part_type: 'grille',
-    model: 'altis',
-    year: '2020',
-    price: 5200.00
-},
-{
-    part_number: '8791012L40',
-    part_type: 'mirror',
-    model: 'altis',
-    year: '2020',
-    price: 7800.00 
-},
-{
-    part_number: '8111012M00',
-    part_type: 'headlight',
-    model: 'altis',
-    year: '2020',
-    price: 12500.00 
-},
-{
-    part_number: '8155012D70',
-    part_type: 'taillight',
-    model: 'altis',
-    year: '2020',
-    price: 5500.00
-},
-{
-    part_number: '6700112C20',
-    part_type: 'door',
-    model: 'altis',
-    year: '2020',
-    price: 11000.00
-},
-//Altis 2021 parts
-{
-    part_number: '5211912G30',
-    part_type: 'front_bumper',
-    model: 'altis',
-    year: '2021',
-    price: 4200.00
-},
-{
-    part_number: '5215912B60',
-    part_type: 'rear_bumper',
-    model: 'altis',
-    year: '2021',
-    price: 4500.00
-},
-{
-    part_number: '5310112F20',
-    part_type: 'grille',
-    model: 'altis',
-    year: '2021',
-    price: 5800.00
-},
-{
-    part_number: '8791012L40',
-    part_type: 'mirror',
-    model: 'altis',
-    year: '2021',
-    price: 8200.00 
-},
-{
-    part_number: '8111012M00',
-    part_type: 'headlight',
-    model: 'altis',
-    year: '2021',
-    price: 13500.00 
-},
-{
-    part_number: '8155012D70',
-    part_type: 'taillight',
-    model: 'altis',
-    year: '2021',
-    price: 5200.00
-},
-{
-    part_number: '6700112C20',
-    part_type: 'door',
-    model: 'altis',
-    year: '2021',
-    price: 11500.00
-},
-//Altis 2022 parts
-{
-    part_number: '5211912G30',
-    part_type: 'front_bumper',
-    model: 'altis',
-    year: '2022',
-    price: 4500.00
-},
-{
-    part_number: '5215912B60',
-    part_type: 'rear_bumper',
-    model: 'altis',
-    year: '2022',
-    price: 4800.00
-},
-{
-    part_number: '5310112F20',
-    part_type: 'grille',
-    model: 'altis',
-    year: '2022',
-    price: 6000.00
-},
-{
-    part_number: '8791012L40',
-    part_type: 'mirror',
-    model: 'altis',
-    year: '2022',
-    price: 8500.00 
-},
-{
-    part_number: '8111012M00',
-    part_type: 'headlight',
-    model: 'altis',
-    year: '2022',
-    price: 14500.00 
-},
-{
-    part_number: '8155012D70',
-    part_type: 'taillight',
-    model: 'altis',
-    year: '2022',
-    price: 5500.00
-},
-{
-    part_number: '6700112C20',
-    part_type: 'door',
-    model: 'altis',
-    year: '2022',
-    price: 12500.00
-}
-];
+(
+    '5211906G50',
+    'front_bumper',
+    'camry',
+    '2019',
+    3800.00
+),
+(
+    '5215906G00',
+    'rear_bumper',
+    'camry',
+    '2019',
+    3500.00
+),
+(
+    '5311106G50',
+    'grille',
+    'camry',
+    '2019',
+    4500.00
+),
+(
+    '8794006A60',
+    'mirror',
+    'camry',
+    '2019',
+    8500.00 
+),
+(
+    '8117006C40',
+    'headlight',
+    'camry',
+    '2019',
+    9000.00 
+),
+(
+    '8156106750',
+    'taillight',
+    'camry',
+    '2019',
+    3050.00
+),
+(
+    '6700206240',
+    'door',
+    'camry',
+    '2019',
+    15500.00
+),
+(
+    '5211906G51',
+    'front_bumper',
+    'camry',
+    '2020',
+    4000.00
+),
+(
+    '5215906G0',
+    'rear_bumper',
+    'camry',
+    '2020',
+    3700.00
+),
+(
+    '5310106E50',
+    'grille',
+    'camry',
+    '2020',
+    4800.00
+),
+(
+    '8791006A60',
+    'mirror',
+    'camry',
+    '2020',
+    8700.00 
+),
+(
+    '8111006C40',
+    'headlight',
+    'camry',
+    '2020',
+    9200.00 
+),
+(
+    '8155006750',
+    'taillight',
+    'camry',
+    '2020',
+    3200.00
+),
+(
+    '6700106240',
+    'door',
+    'camry',
+    '2020',
+    15500.00
+),
+(
+    '5211906L40',
+    'front_bumper',
+    'camry',
+    '2021',
+    4200.00
+),
+(
+    '5215906G02',
+    'rear_bumper',
+    'camry',
+    '2021',
+    3900.00
+),
+(
+    '5310106G90',
+    'grille',
+    'camry',
+    '2021',
+    5500.00
+),
+(
+    '8791006B40',
+    'mirror',
+    'camry',
+    '2021',
+    9000.00 
+),
+(
+    '8111006D90',
+    'headlight',
+    'camry',
+    '2021',
+    9500.00 
+),
+(
+    '8155006831',
+    'taillight',
+    'camry',
+    '2021',
+    3300.00
+),
+(
+    '6700106241',
+    'door',
+    'camry',
+    '2021',
+    15000.00
+),
+(
+    '5211906L43',
+    'front_bumper',
+    'camry',
+    '2022',
+    4800.00
+),
+(
+    '5215906G03',
+    'rear_bumper',
+    'camry',
+    '2022',
+    4100.00
+),
+(
+    '5310106G91',
+    'grille',
+    'camry',
+    '2022',
+    6000.00
+),
+(
+    '8791006B41',
+    'mirror',
+    'camry',
+    '2022',
+    8500.00 
+),
+(
+    '8111006D91',
+    'headlight',
+    'camry',
+    '2022',
+    9850.00 
+),
+(
+    '8155006832',
+    'taillight',
+    'camry',
+    '2022',
+    3400.00
+),
+(
+    '6700106242',
+    'door',
+    'camry',
+    '2022',
+    14500.00
+),
+(
+    '5211906L42',
+    'front_bumper',
+    'camry',
+    '2023',
+    4800.00
+),
+(
+    '5215906G04',
+    'rear_bumper',
+    'camry',
+    '2023',
+    4500.00
+),
+(
+    '5310106G92',
+    'grille',
+    'camry',
+    '2023',
+    8500.00
+),
+(
+    '8791006B42',
+    'mirror',
+    'camry',
+    '2023',
+    8500.00 
+),
+(
+    '8111006D92',
+    'headlight',
+    'camry',
+    '2023',
+    15200.00 
+),
+(
+    '8155006830',
+    'taillight',
+    'camry',
+    '2023',
+    3500.00
+),
+(
+    '6700106243',
+    'door',
+    'camry',
+    '2023',
+    13500.00
+),
+(
+    '521190A913',
+    'front_bumper',
+    'Corolla_cross',
+    '2022',
+    3800.00
+),
+(
+    '521590A905',
+    'rear_bumper',
+    'Corolla_cross',
+    '2022',
+    3500.00
+),
+(
+    '531010A030',
+    'grille',
+    'Corolla_cross',
+    '2022',
+    6000.00
+),
+(
+    '879100A160',
+    'mirror',
+    'Corolla_cross',
+    '2022',
+    8800.00 
+),
+(
+    '811100A010',
+    'headlight',
+    'Corolla_cross',
+    '2022',
+    19500.00 
+),
+(
+    '815500A010',
+    'taillight',
+    'Corolla_cross',
+    '2022',
+    5600.00
+),
+(
+    '670010A020',
+    'door',
+    'Corolla_cross',
+    '2022',
+    11500.00
+),
+(
+    '521190A903',
+    'front_bumper',
+    'Corolla_cross',
+    '2023',
+    4500.00
+),
+(
+    '521590A906',
+    'rear_bumper',
+    'Corolla_cross',
+    '2023',
+    3700.00
+),
+(
+    '531010A031',
+    'grille',
+    'Corolla_cross',
+    '2023',
+    6500.00
+),
+(
+    '879100A161',
+    'mirror',
+    'Corolla_cross',
+    '2023',
+    9000.00 
+),
+(
+    '811100A011',
+    'headlight',
+    'Corolla_cross',
+    '2023',
+    22000.00 
+),
+(
+    '815500A011',
+    'taillight',
+    'Corolla_cross',
+    '2023',
+    5800.00
+),
+(
+    '670010A021',
+    'door',
+    'Corolla_cross',
+    '2023',
+    11000.00
+),
+(
+    '521190U927',
+    'front_bumper',
+    'Yaris_hatchback',
+    '2017',
+    2500.00
+),
+(
+    '521590U917',
+    'rear_bumper',
+    'Yaris_hatchback',
+    '2017',
+    2100.00
+),
+(
+    '531140D020',
+    'grille',
+    'Yaris_hatchback',
+    '2017',
+    2200.00
+),
+(
+    '879100D640',
+    'mirror',
+    'Yaris_hatchback',
+    '2017',
+    3500.00 
+),
+(
+    '811100DG60',
+    'headlight',
+    'Yaris_hatchback',
+    '2017',
+    5800.00 
+),
+(
+    '815500D500',
+    'taillight',
+    'Yaris_hatchback',
+    '2017',
+    2800.00
+),
+(
+    '670010D130',
+    'door',
+    'Yaris_hatchback',
+    '2017',
+    8500.00
+),
+(
+    '521190U950',
+    'front_bumper',
+    'Yaris_hatchback',
+    '2020',
+    3200.00
+),
+(
+    '521590D961',
+    'rear_bumper',
+    'Yaris_hatchback',
+    '2020',
+    3200.00
+),
+(
+    '531120D160',
+    'grille',
+    'Yaris_hatchback',
+    '2020',
+    2400.00
+),
+(
+    '879100D810',
+    'mirror',
+    'Yaris_hatchback',
+    '2020',
+    4700.00 
+),
+(
+    '811100DA00',
+    'headlight',
+    'Yaris_hatchback',
+    '2020',
+    7900.00 
+),
+(
+    '815500D501',
+    'taillight',
+    'Yaris_hatchback',
+    '2020',
+    3500.00
+),
+(
+    '670010D131',
+    'door',
+    'Yaris_hatchback',
+    '2020',
+    8700.00
+),
+(
+    '521190U931',
+    'front_bumper',
+    'Yaris_ATIV',
+    '2018',
+    2700.00
+),
+(
+    '521590U906',
+    'rear_bumper',
+    'Yaris_ATIV',
+    '2018',
+    2900.00
+),
+(
+    '531010D540',
+    'grille',
+    'Yaris_ATIV',
+    '2018',
+    2200.00
+),
+(
+    '879100D811',
+    'mirror',
+    'Yaris_ATIV',
+    '2018',
+    3700.00 
+),
+(
+    '811100D680',
+    'headlight',
+    'Yaris_ATIV',
+    '2018',
+    6000.00 
+),
+(
+    '815500D560',
+    'taillight',
+    'Yaris_ATIV',
+    '2018',
+    3500.00
+),
+(
+    '670010D331',
+    'door',
+    'Yaris_ATIV',
+    '2018',
+    7900.00
+),
+(
+    '521190U932',
+    'front_bumper',
+    'Yaris_ATIV',
+    '2019',
+    3000.00
+),
+(
+    '521590U907',
+    'rear_bumper',
+    'Yaris_ATIV',
+    '2019',
+    3200.00
+),
+(
+    '531010D541',
+    'grille',
+    'Yaris_ATIV',
+    '2019',
+    2500.00
+),
+(
+    '879100D812',
+    'mirror',
+    'Yaris_ATIV',
+    '2019',
+    4000.00 
+),
+(
+    '811100D681',
+    'headlight',
+    'Yaris_ATIV',
+    '2019',
+    6200.00 
+),
+(
+    '815500D561',
+    'taillight',
+    'Yaris_ATIV',
+    '2019',
+    3700.00
+),
+(
+    '670010D332',
+    'door',
+    'Yaris_ATIV',
+    '2019',
+    8200.00
+),
+(
+    '521190U933',
+    'front_bumper',
+    'Yaris_sedan',
+    '2019',
+    3200.00
+),
+(
+    '521590U908',
+    'rear_bumper',
+    'Yaris_sedan',
+    '2019',
+    2800.00
+),
+(
+    '531010D542',
+    'grille',
+    'Yaris_sedan',
+    '2019',
+    2500.00
+),
+(
+    '879100D813',
+    'mirror',
+    'Yaris_sedan',
+    '2019',
+    4200.00 
+),
+(
+    '811100D682',
+    'headlight',
+    'Yaris_sedan',
+    '2019',
+    5200.00 
+),
+(
+    '815500D562',
+    'taillight',
+    'Yaris_sedan',
+    '2019',
+    3800.00
+),
+(
+    '670010D330',
+    'door',
+    'Yaris_sedan',
+    '2019',
+    7900.00
+),
+(
+    '5211912G30',
+    'front_bumper',
+    'altis',
+    '2019',
+    3500.00
+),
+(
+    '5215912B60',
+    'rear_bumper',
+    'altis',
+    '2019',
+    4200.00
+),
+(
+    '5310112F20',
+    'grille',
+    'altis',
+    '2019',
+    4800.00
+),
+(
+    '8791012L40',
+    'mirror',
+    'altis',
+    '2019',
+    7500.00 
+),
+(
+    '8111012M00',
+    'headlight',
+    'altis',
+    '2019',
+    1150.00 
+),
+(
+    '8155012D70',
+    'taillight',
+    'altis',
+    '2019',
+    5200.00
+),
+(
+    '6700112C20',
+    'door',
+    'altis',
+    '2019',
+    10500.00
+),
+(
+    '5211912G31',
+    'front_bumper',
+    'altis',
+    '2020',
+    3900.00
+),
+(
+    '5215912B61',
+    'rear_bumper',
+    'altis',
+    '2020',
+    4800.00
+),
+(
+    '5310112F21',
+    'grille',
+    'altis',
+    '2020',
+    5200.00
+),
+(
+    '8791012L41',
+    'mirror',
+    'altis',
+    '2020',
+    7800.00 
+),
+(
+    '8111012M01',
+    'headlight',
+    'altis',
+    '2020',
+    12500.00 
+),
+(
+    '8155012D71',
+    'taillight',
+    'altis',
+    '2020',
+    5500.00
+),
+(
+    '6700112C21',
+    'door',
+    'altis',
+    '2020',
+    11000.00
+),
+(
+    '5211912G32',
+    'front_bumper',
+    'altis',
+    '2021',
+    4200.00
+),
+(
+    '5215912B62',
+    'rear_bumper',
+    'altis',
+    '2021',
+    4500.00
+),
+(
+    '5310112F22',
+    'grille',
+    'altis',
+    '2021',
+    5800.00
+),
+(
+    '8791012L42',
+    'mirror',
+    'altis',
+    '2021',
+    8200.00 
+),
+(
+    '8111012M02',
+    'headlight',
+    'altis',
+    '2021',
+    13500.00 
+),
+(
+    '8155012D72',
+    'taillight',
+    'altis',
+    '2021',
+    5200.00
+),
+(
+    '6700112C22',
+    'door',
+    'altis',
+    '2021',
+    11500.00
+),
+(
+    '5211912G33',
+    'front_bumper',
+    'altis',
+    '2022',
+    4500.00
+),
+(
+    '5215912B63',
+    'rear_bumper',
+    'altis',
+    '2022',
+    4800.00
+),
+(
+    '5310112F23',
+    'grille',
+    'altis',
+    '2022',
+    6000.00
+),
+(
+    '8791012L43',
+    'mirror',
+    'altis',
+    '2022',
+    8500.00 
+),
+(
+    '8111012M03',
+    'headlight',
+    'altis',
+    '2022',
+    14500.00 
+),
+(
+    '8155012D73',
+    'taillight',
+    'altis',
+    '2022',
+    5500.00
+),
+(
+    '6700112C23',
+    'door',
+    'altis',
+    '2022',
+    12500.00
+)
