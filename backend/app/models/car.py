@@ -11,7 +11,6 @@ class CarModel(Base):
     brand = Column(String(100))  # ยี่ห้อรถ เช่น Toyota
     model = Column(String(100))  # แบบรถ เช่น Camry
     year = Column(Integer)  # ปี ค.ศ.
-    model_image = Column(Text)
     service_center_id = Column(Integer, ForeignKey("service_center.id", ondelete="SET NULL"))
     created_at = Column(DateTime, default=func.now())
     
