@@ -28,7 +28,7 @@ export default function AssessCarDamage() {
             try {
                 setLoadingCars(true);
                 const lineId = "user11";
-                const res = await fetch(`http://localhost:8000/api/v1/user/${lineId}`);
+                const res = await fetch(`https://quickcheck-test.onrender.com/api/v1/user/${lineId}`);
                 if (!res.ok) throw new Error("โหลดรายการรถไม่สำเร็จ");
                 const data = await res.json();
 
@@ -171,7 +171,7 @@ export default function AssessCarDamage() {
             fd.append("images", i.file)
         })
 
-        const res = await fetch("http://localhost:8000/api/v1/assess_damage", {
+        const res = await fetch("https://quickcheck-test.onrender.com/api/v1/assess_damage", {
             method: "POST",
             body: fd,
         })

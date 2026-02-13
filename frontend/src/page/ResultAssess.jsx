@@ -12,7 +12,7 @@ export default function ResultAssess() {
 
     useEffect(() => {
         const load = async () => {
-            const res = await fetch(`http://localhost:8000/api/v1/result/${historyId}`);
+            const res = await fetch(`https://quickcheck-test.onrender.com/api/v1/result/${historyId}`);
             if (!res.ok) {
                 alert("โหลดผลประเมินไม่สำเร็จ");
                 return;
@@ -93,7 +93,7 @@ export default function ResultAssess() {
                                 {result.items.map((item, index) => (
                                     <div key={index} className="w-full snap-center shrink-0">
                                         <img
-                                            src={`http://localhost:8000/${item.image_path}`}
+                                            src={`https://quickcheck-test.onrender.com/${item.image_path}`}
                                             alt={`car-${index}`}
                                             className="w-full h-50 object-cover rounded-xl"
                                         />

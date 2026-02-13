@@ -66,7 +66,7 @@ export default function ServiceMap() {
             { enableHighAccuracy: true }
         );
 
-        fetch('http://localhost:8000/api/v1/service_center')
+        fetch('https://quickcheck-test.onrender.com/api/v1/service_center')
             .then((res) => res.json())
             .then((data) => setServiceCenter(data))
             .catch((err) => console.error('Error fetching user:', err));

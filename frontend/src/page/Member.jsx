@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { mockFormData, mockCars } from "../assets/MemberData";
 
-const API_BASE_URL = 'http://localhost:8000/api/v1';
+const API_BASE_URL = 'https://quickcheck-test.onrender.com/api/v1';
 const LINE_ID = "user11"; // TODO: ใช้ LINE ID จริงจาก LIFF
 
 const CAR_MODEL_YEAR_OPTIONS = {
