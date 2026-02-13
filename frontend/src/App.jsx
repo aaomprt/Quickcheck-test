@@ -6,7 +6,7 @@ import Register from "./page/Register";
 import Member from "./page/Member";
 import ServiceMap from "./page/ServiceMap";
 import PrivateRoute from "./components/PrivateRoute";
-import DefaultRedirect from "./components/LiffCallback";
+import LiffCallback from "./components/LiffCallback";
 
 export default function App() {
   return (
