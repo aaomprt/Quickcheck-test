@@ -1,4 +1,5 @@
-import { Route, Routes, useNavigate, useLocation, useEffect } from "react-router-dom";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import React, { useEffect } from 'react'
 
 import AssessCarDamage from "./page/AssessCarDamage";
 import ResultAssess from "./page/ResultAssess";
