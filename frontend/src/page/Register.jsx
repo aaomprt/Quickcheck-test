@@ -33,7 +33,7 @@ export default function Register() {
     });
 
     useEffect(() => {
-        const initLiffAndCheckStatus = async () => {
+        const initAndCheck = async () => {
             try {
                 await liff.init({ liffId: LIFF_ID });
 
@@ -45,22 +45,19 @@ export default function Register() {
                 const profile = await liff.getProfile();
                 setLineId(profile.userId);
 
-                // Login สำเร็จ
                 const res = await fetch(`https://quickcheck-test.onrender.com/api/v1/check_user/${profile.userId}`);
                 if (res.ok) {
                     navigate('/member', { replace: true });
                     return;
                 }
 
-                // ถ้าไม่พบข้อมูล
                 setIsLoading(false);
-
             } catch (err) {
-                console.error('LIFF or Auth check failed', err);
+                console.error('Initial error', err);
                 setIsLoading(false);
             }
         };
-        initLiffAndCheckStatus();
+        initAndCheck();
     }, [navigate]);
 
     const handleUserChange = (e) => {
