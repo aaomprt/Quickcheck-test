@@ -18,7 +18,7 @@ export default function ResultAssess() {
             try {
                 const res = await fetch(`${API_BASE_URL}/api/v1/result/${historyId}`);
                 if (!res.ok) throw new Error("โหลดผลประเมินไม่สำเร็จ");
-                
+
                 const data = await res.json();
                 if (isMounted) {
                     setResult(data);
@@ -47,7 +47,8 @@ export default function ResultAssess() {
             maximumFractionDigits: 2,
         });
 
-    const totalSlides = result.items?.length || 0;
+    const items = result?.items ?? [];
+    const totalSlides = items.length;
 
     const handleSliderScroll = (e) => {
         const el = e.currentTarget;
@@ -106,7 +107,7 @@ export default function ResultAssess() {
                                     msOverflowStyle: "none",
                                 }}
                             >
-                                {result.items?.map((item, index) => (
+                                {items.map((item, index) => (
                                     <div key={index} className="w-full snap-center shrink-0">
                                         <img
                                             src={`${API_BASE_URL}/${item.image_path}`}
@@ -120,7 +121,7 @@ export default function ResultAssess() {
                             {/* Dots */}
                             {totalSlides > 1 && (
                                 <div className="flex items-center justify-center gap-2 mt-3">
-                                    {result.items?.map((_, i) => (
+                                    {items.map((_, i) => (
                                         <button
                                             key={i}
                                             type="button"
@@ -146,7 +147,7 @@ export default function ResultAssess() {
                     </div>
 
                     <div>
-                        {result.items?.map((item, index) => (
+                        {items.map((item, index) => (
                             <div key={index} className="grid grid-cols-3 mb-3 items-center">
                                 <p className="col-span-2">{item.part_name_th}</p>
                                 {item.damage_level === "Minor" ? (
