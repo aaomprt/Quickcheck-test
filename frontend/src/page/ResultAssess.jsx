@@ -120,7 +120,7 @@ export default function ResultAssess() {
                             {/* Dots */}
                             {totalSlides > 1 && (
                                 <div className="flex items-center justify-center gap-2 mt-3">
-                                    {result.items.map((_, i) => (
+                                    {result.items?.map((_, i) => (
                                         <button
                                             key={i}
                                             type="button"
@@ -146,7 +146,7 @@ export default function ResultAssess() {
                     </div>
 
                     <div>
-                        {result.items.map((item, index) => (
+                        {result.items?.map((item, index) => (
                             <div key={index} className="grid grid-cols-3 mb-3 items-center">
                                 <p className="col-span-2">{item.part_name_th}</p>
                                 {item.damage_level === "Minor" ? (
