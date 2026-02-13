@@ -10,6 +10,16 @@ from app.services.user import UserService
 
 router = APIRouter()
 
+@router.get("/check_user/{line_id}")
+def check_user(line_id: str, db: Session = Depends(get_db)):
+    user = UserService.get_user_by_line_id(db, line_id.strip())
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="User not found"
+        )
+    return {"exists": True, "line_id": user.line_id}
+
 @router.post(
     "/register",
     response_model=RegisterResponse,
