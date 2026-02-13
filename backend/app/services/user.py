@@ -221,7 +221,6 @@ class UserService:
                     brand=update_data.brand if update_data.brand is not None else car.brand,
                     model=update_data.model if update_data.model is not None else car.model,
                     year=update_data.year if update_data.year is not None else car.year,
-                    model_image=car.model_image,
                     service_center_id=car.service_center_id
                 )
                 db.add(new_car)
