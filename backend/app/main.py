@@ -8,7 +8,7 @@ app = FastAPI(title="QuickCheck Backend")
 
 origins = [
     "http://localhost:5173",
-    "https://ชื่อ-app-ของคุณ.vercel.app",
+    "https://quickcheck-test.vercel.app",
 ]
 
 setup_cors(app, origins)
