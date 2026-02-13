@@ -95,9 +95,10 @@ export default function AssessCarDamage() {
             try {
                 await liff.init({ liffId: LIFF_ID });
                 if (!liff.isLoggedIn()) {
-                    liff.login();
+                    window.location.replace("/member");
                     return;
                 }
+
                 const profile = await liff.getProfile();
                 setLineId(profile.userId);
 

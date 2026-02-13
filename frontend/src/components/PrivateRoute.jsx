@@ -12,7 +12,7 @@ export default function PrivateRoute() {
                 await liff.init({ liffId: "2008188161-uQLSDa4M" });
 
                 if (!liff.isLoggedIn()) {
-                    liff.login();
+                    liff.login({ redirectUri: `${window.location.origin}/liff` });
                     return;
                 }
 

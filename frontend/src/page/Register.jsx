@@ -38,7 +38,7 @@ export default function Register() {
                 await liff.init({ liffId: LIFF_ID });
 
                 if (!liff.isLoggedIn()) {
-                    liff.login();
+                    navigate("/member", { replace: true });
                     return;
                 }
 

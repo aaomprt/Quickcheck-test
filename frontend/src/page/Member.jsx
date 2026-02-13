@@ -77,8 +77,8 @@ function CarAccordion({ car, idx, onEditCar, onDeleteCar }) {
             <button type="button" className="w-full flex items-center justify-between px-4 py-3" onClick={() => setOpen(!open)}>
                 <span className="font-semibold text-base text-left">{car.brand} {car.model} {car.license_plate}</span>
                 <span className="flex items-center gap-2">
-                    <img src="/edit_car.png" alt="edit" className="w-5 h-5 cursor-pointer hover:scale-110" 
-                         onClick={(e) => { e.stopPropagation(); setEditMode(true); setOpen(true); }} />
+                    <img src="/edit_car.png" alt="edit" className="w-5 h-5 cursor-pointer hover:scale-110"
+                        onClick={(e) => { e.stopPropagation(); setEditMode(true); setOpen(true); }} />
                     <span className="text-gray-500">{open ? "▲" : "▼"}</span>
                 </span>
             </button>
@@ -181,13 +181,15 @@ export default function Member() {
         const initLiff = async () => {
             try {
                 await liff.init({ liffId: LIFF_ID });
-                if (liff.isLoggedIn()) {
-                    const profile = await liff.getProfile();
-                    setLineId(profile.userId);
-                    fetchUserData(profile.userId);
-                } else {
-                    liff.login();
+                
+                if (!liff.isLoggedIn()) {
+                    window.location.replace("/member");
+                    return;
                 }
+
+                const profile = await liff.getProfile();
+                setLineId(profile.userId);
+                fetchUserData(profile.userId);
             } catch (err) {
                 console.error("LIFF Init Error:", err);
                 setLoading(false);
@@ -258,15 +260,15 @@ export default function Member() {
             <div className='flex items-center justify-center bg-white/60 h-20'><h1 className='font-bold text-xl'>QuickCheck member</h1></div>
             <div className="bg-white/60 rounded-md my-2 p-4 items-center justify-center">
                 <div className="flex items-center justify-center mt-7 mb-10"><img src="/logo.png" alt="Logo" /></div>
-                
+
                 {/* User Info */}
                 <div className="text-lg font-medium rounded-lg mb-1 p-4">
                     <h2 className="text-lg font-semibold text-center mb-4">ข้อมูลส่วนตัว</h2>
                     <div className="space-y-3">
                         <div><label className="text-gray-700 text-sm">ชื่อ</label>
-                        <input value={displayFormData.firstName} readOnly className="w-full p-2 border border-gray-500 rounded-full bg-gray-100" /></div>
+                            <input value={displayFormData.firstName} readOnly className="w-full p-2 border border-gray-500 rounded-full bg-gray-100" /></div>
                         <div><label className="text-gray-700 text-sm">นามสกุล</label>
-                        <input value={displayFormData.lastName} readOnly className="w-full p-2 border border-gray-500 rounded-full bg-gray-100" /></div>
+                            <input value={displayFormData.lastName} readOnly className="w-full p-2 border border-gray-500 rounded-full bg-gray-100" /></div>
                     </div>
                 </div>
             </div>
@@ -282,8 +284,8 @@ export default function Member() {
                     <form className="mb-4 border rounded-lg bg-white/80 shadow p-4" onSubmit={handleAddCar}>
                         <div className="grid grid-cols-2 gap-x-2 gap-y-2 text-sm font-medium mb-4">
                             <div className="text-gray-600">เลขทะเบียน</div>
-                            <input name="license_plate" value={newCar.license_plate} onChange={(e) => setNewCar({...newCar, license_plate: e.target.value})} className="border rounded p-1" placeholder="กข 1234" required />
-                            
+                            <input name="license_plate" value={newCar.license_plate} onChange={(e) => setNewCar({ ...newCar, license_plate: e.target.value })} className="border rounded p-1" placeholder="กข 1234" required />
+
                             <div className="text-gray-600">แบบรถ</div>
                             <select name="model" value={newCar.model} onChange={handleNewCarChange} className="border rounded p-1" required>
                                 <option value="" disabled>เลือกแบบรถ</option>
@@ -297,7 +299,7 @@ export default function Member() {
                             </select>
 
                             <div className="text-gray-600">เลขตัวรถ</div>
-                            <input name="chassis_number" value={newCar.chassis_number} onChange={(e) => setNewCar({...newCar, chassis_number: e.target.value})} className="border rounded p-1" placeholder="17 หลัก" />
+                            <input name="chassis_number" value={newCar.chassis_number} onChange={(e) => setNewCar({ ...newCar, chassis_number: e.target.value })} className="border rounded p-1" placeholder="17 หลัก" />
                         </div>
                         <div className="flex gap-2 justify-end">
                             <button type="submit" className="bg-[#FF5F25]/80 text-white py-1 px-4 rounded-full">บันทึก</button>

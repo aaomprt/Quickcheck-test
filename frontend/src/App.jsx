@@ -6,6 +6,7 @@ import Register from "./page/Register";
 import Member from "./page/Member";
 import ServiceMap from "./page/ServiceMap";
 import PrivateRoute from "./components/PrivateRoute";
+import DefaultRedirect from "./components/LiffCallback";
 
 export default function App() {
   return (
@@ -21,7 +22,7 @@ export default function App() {
         </Route>
 
         {/* Default redirect */}
-        <Route path="*" element={<Navigate to="/member" replace />} />
+        <Route path="/liff" element={<LiffCallback />} />
 
       </Routes>
     </>
