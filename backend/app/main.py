@@ -5,7 +5,7 @@ from app.api.v1.router import api_router
 from fastapi.staticfiles import StaticFiles
 
 import tensorflow as tf
-from backend.app.services.model_predict_service import ModelPredictService
+from app.services.model_predict_service import ModelPredictService
 
 app = FastAPI(title="QuickCheck Backend")
 
