@@ -2,7 +2,7 @@ import json, os
 from uuid import uuid4
 from typing import List
 
-from fastapi import UploadFile, HTTPException
+from fastapi import UploadFile, HTTPException, Request
 from sqlalchemy.orm import Session
 
 from app.models.car import CarModel
@@ -14,17 +14,17 @@ UPLOAD_ROOT = "uploads/history"
 
 def _ensure_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
-
-def _save_upload_file(file: UploadFile, dest_path: str) -> None:
+        
+def _save_bytes(data: bytes, dest_path: str) -> None:
     with open(dest_path, "wb") as f:
-        f.write(file.file.read())
+        f.write(data)
 
-def create_assess_history(
+async def create_assess_history(
+    request: Request,
     db: Session,
     license_plate: str,
     items_json: str,
     images: List[UploadFile],
-    damage_level: str,
 ) -> AssessDamageResponse:
 
     # 1) parse items
@@ -61,60 +61,79 @@ def create_assess_history(
     out_items: list[HistoryItemOut] = []
 
     # 6) create history_items + save files
-    for idx, (it, img) in enumerate(zip(items, images), start=1):
+    svc = getattr(request.app.state, "model_predict", None)
+    if svc is None:
+        raise HTTPException(status_code=500, detail="Model service not initialized")
 
-        # หา part_number จาก part_master โดยอิง part_type + model (+ year ถ้ามี)
-        q = (
-            db.query(PartMaster)
-            .filter(PartMaster.part_type == it.part_type)
-            .filter(PartMaster.model == (car.model or PartMaster.model))
-        )
+    try:
+        for idx, (it, img) in enumerate(zip(items, images), start=1):
 
-        # ถ้ามี year ของรถ ให้พยายาม match year ก่อน
-        part = None
-        if car.year is not None:
-            part = (
+            # validate content-type
+            if not img.content_type or not img.content_type.startswith("image/"):
+                raise HTTPException(status_code=400, detail=f"ไฟล์ลำดับ {idx} ไม่ใช่รูปภาพ")
+
+            # อ่าน bytes
+            image_bytes = await img.read()
+            if not image_bytes:
+                raise HTTPException(status_code=400, detail=f"ไฟล์ลำดับ {idx} ว่างเปล่า")
+
+            # predict damage level
+            damage_level, confidence, probs = svc.predict(image_bytes)
+            # ตอนนี้ damage_level เป็น "Minor"/"Moderate"/"Severe" เข้ากับระบบคุณ
+
+            # --- หา part_master ---
+            q = (
                 db.query(PartMaster)
                 .filter(PartMaster.part_type == it.part_type)
                 .filter(PartMaster.model == (car.model or PartMaster.model))
-                .filter((PartMaster.year == car.year) | (PartMaster.year.is_(None)))
-                .first()
-            )
-        else:
-            part = q.first()
-
-        if not part:
-            raise HTTPException(
-                status_code=404,
-                detail=f"ไม่พบอะไหล่ใน part_master สำหรับ part_type='{it.part_type}' (model/year ของรถไม่ตรง)",
             )
 
-        # บันทึกไฟล์
-        ext = os.path.splitext(img.filename or "")[1] or ".jpg"
-        fname = f"{idx:02d}_{uuid4().hex}{ext}"
-        dest = os.path.join(folder, fname)
-        _save_upload_file(img, dest)
+            if car.year is not None:
+                part = (
+                    db.query(PartMaster)
+                    .filter(PartMaster.part_type == it.part_type)
+                    .filter(PartMaster.model == (car.model or PartMaster.model))
+                    .filter((PartMaster.year == car.year) | (PartMaster.year.is_(None)))
+                    .first()
+                )
+            else:
+                part = q.first()
 
-        rel_path = dest.replace("\\", "/")  # ให้ path เป็นแบบเดียวกัน
+            if not part:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"ไม่พบอะไหล่ใน part_master สำหรับ part_type='{it.part_type}' (model/year ของรถไม่ตรง)",
+                )
 
-        hi = HistoryItem(
-            history_id=history.id,
-            part_number=part.part_number,
-            damage_level=damage_level,
-            image_path=rel_path,
-        )
-        db.add(hi)
+            # save image using bytes
+            ext = os.path.splitext(img.filename or "")[1] or ".jpg"
+            fname = f"{idx:02d}_{uuid4().hex}{ext}"
+            dest = os.path.join(folder, fname)
+            _save_bytes(image_bytes, dest)
+            rel_path = dest.replace("\\", "/")
 
-        out_items.append(
-            HistoryItemOut(
+            # insert history item with predicted level
+            hi = HistoryItem(
+                history_id=history.id,
                 part_number=part.part_number,
-                part_type=part.part_type,
                 damage_level=damage_level,
                 image_path=rel_path,
             )
-        )
+            db.add(hi)
 
-    db.commit()
+            out_items.append(
+                HistoryItemOut(
+                    part_number=part.part_number,
+                    part_type=part.part_type,
+                    damage_level=damage_level,
+                    image_path=rel_path,
+                )
+            )
+
+        db.commit()
+    except:
+        db.rollback()
+        raise
 
     return AssessDamageResponse(
         history_id=history.id,

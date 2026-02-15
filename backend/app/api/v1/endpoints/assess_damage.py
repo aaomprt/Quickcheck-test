@@ -1,5 +1,5 @@
 from typing import List
-from fastapi import APIRouter, Depends, File, Form, UploadFile
+from fastapi import APIRouter, Depends, File, Form, UploadFile, Request
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
@@ -13,18 +13,19 @@ from app.services.result_service import get_history_result
 router = APIRouter()
 
 @router.post("/assess_damage", response_model=AssessDamageResponse)
-def assess_damage(
+async def assess_damage(
+    request: Request,
     license_plate: str = Form(...),
     items: str = Form(...),                 # JSON string
     images: List[UploadFile] = File(...),   # multiple files
     db: Session = Depends(get_db),
 ):
-    return create_assess_history(
+    return await create_assess_history(
+        request=request,
         db=db,
         license_plate=license_plate,
         items_json=items,
         images=images,
-        damage_level="Moderate",
     )
     
 @router.get("/result/{history_id}", response_model=HistoryResultResponse)
